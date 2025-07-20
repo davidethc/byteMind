@@ -1,11 +1,16 @@
 import { useState } from "react";
 
-function App() {
+export default function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Holas</h1>
-    </>
+    <main>
+      {/* Gradient image */}
+      <img
+        className="absolute top-0 right-0 opacity-60 -z-10"
+        src="/gradient.png"
+        alt="Gradient-img"
+      />
+      {/* Blur Effect */}
+      <div className="h-0 w-[40rem] absolute top-[20%] right-[-5%] shadow-[0_0_900px_20px_#544675] -rotate-[30deg] -z-10"></div>
+    </main>
   );
 }
-
-export default App;
