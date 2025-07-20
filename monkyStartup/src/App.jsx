@@ -1,8 +1,17 @@
 import { useState } from "react";
 import Header from "./components/header";
 import Hero from "./components/hero";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from "react";
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true,
+    });
+  }, []);
   return (
     <main>
       {/* Gradient image */}
