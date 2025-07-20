@@ -17,7 +17,7 @@ const Header = () => {
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-light m-0">
         ByteMind
       </h1>
-      <nav>
+      <nav className="gap-6 flex items-center hidden md:flex">
         <a
           className="text-base tracking-wider transition-colors hover:text-gray-300 z-50 "
           href="#"
