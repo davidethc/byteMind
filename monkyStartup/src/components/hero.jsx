@@ -12,6 +12,16 @@ const Hero = () => {
             Introducing
           </div>
         </div>
+        {/* main hading*/}
+        <h1>
+          BUSCAS UNA WEB <br />
+          UNA AUTOMATIZACION?
+        </h1>
+        {/* descriocion*/}
+        <p className="text-base sm:text-lg tracking-wider text-gray-400 max-w-[25rem] lg:max-w-[30remn]">
+          BYTE MIND lo tiene todo desde apps webs disenos softwar etc ideal para
+          gente inteligente mmhuevo
+        </p>
       </div>
     </main>
   );
