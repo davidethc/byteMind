@@ -51,7 +51,10 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <Spline scene="https://prod.spline.design/cpCiSO7m4VIW0CNS/scene.splinecode" />
+      <Spline
+        className="absolute lg:top-0 top-[-20%] bottom-0 lg:left-[-25%] sm:left-[-2%]"
+        scene="https://prod.spline.design/cpCiSO7m4VIW0CNS/scene.splinecode"
+      />
     </main>
   );
 };
