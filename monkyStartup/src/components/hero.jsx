@@ -12,16 +12,43 @@ const Hero = () => {
             Introducing
           </div>
         </div>
-        {/* main hading*/}
-        <h1>
+        {/* main heading */}
+        <h1 className="mt-6">
           BUSCAS UNA WEB <br />
           UNA AUTOMATIZACION?
         </h1>
-        {/* descriocion*/}
-        <p className="text-base sm:text-lg tracking-wider text-gray-400 max-w-[25rem] lg:max-w-[30remn]">
+        {/* descripcion */}
+        <p className="text-base sm:text-lg tracking-wider text-gray-400 max-w-[25rem] lg:max-w-[30rem]">
           BYTE MIND lo tiene todo desde apps webs disenos softwar etc ideal para
           gente inteligente mmhuevo
         </p>
+        {/* button */}
+        <div className="flex gap-4 mt-12">
+          <a
+            className="mt-6 inline-block border border-[#2a2a2a]
+           py-2 sm:py-3 px-8 sm:px-10 rounded-full 
+           sm:text-lg text-sm font-semibold 
+           ing-wider transition-all duration-300 
+           hover:bg-[#1a1a1A] bg-gray-300 text-black hover:text-white 
+           flex items-center gap-2"
+            href="#"
+          >
+            Documentacions
+            <i className="bx bx-link-external"></i>
+          </a>
+          <a
+            className="mt-6 inline-block border border-[#2a2a2a]
+           py-2 sm:py-3 px-8 sm:px-10 rounded-full 
+           sm:text-lg text-sm font-semibold 
+           ing-wider transition-all duration-300 
+           hover:bg-[#1a1a1A] bg-gray-300 text-black hover:text-white 
+           flex items-center gap-2"
+            href="#"
+          >
+            Persons
+            <i className="bx bx-link-external"></i>
+          </a>
+        </div>
       </div>
     </main>
   );
