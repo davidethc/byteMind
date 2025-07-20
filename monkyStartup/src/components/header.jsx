@@ -26,6 +26,12 @@ const Header = () => {
         >
           Contrata
         </a>
+        <a
+          className="text-base tracking-wider transition-colors hover:text-gray-300 z-50 "
+          href="#"
+        >
+          Contrata
+        </a>
       </nav>
       <button className="hidden md:block bg-[#a7a7a7] text-black py-3 px-8 rounded-full border-none font-medium transition-all duration-500 hover:bg-white cursor pointer scale-z-50">
         ENTRAR
@@ -34,6 +40,35 @@ const Header = () => {
       <button className="md:hidden text-3xl p-2 z-50">
         <i className="bx bx-menu"></i>
       </button>
+      {/* mobile menu - visible only on moblie */}
+      <div className="fixed top-20 bottom-0 right-0 left-0 p-5 md:hidden z-40 bg-black bg-opacity-70">
+        <nav className="flex flex-col gap-6 items-center">
+          <a
+            className="text-base tracking-wider transition-colors hover:text-gray-300 z-50 "
+            href="#"
+          >
+            QuieneSomos
+          </a>
+          <a
+            className="text-base tracking-wider transition-colors hover:text-gray-300 z-50 "
+            href="#"
+          >
+            Contacta
+          </a>
+          <a
+            className="text-base tracking-wider transition-colors hover:text-gray-300 z-50 "
+            href="#"
+          >
+            Contrata
+          </a>
+          <a
+            className="text-base tracking-wider transition-colors hover:text-gray-300 z-50 "
+            href="#"
+          >
+            Contrata
+          </a>
+        </nav>
+      </div>
     </header>
   );
 };
