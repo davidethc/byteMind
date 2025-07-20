@@ -2,6 +2,16 @@ import React from "react";
 import "boxicons/css/boxicons.min.css";
 
 const Header = () => {
+  const toggleMenu = () => {
+    const menu = document.getElementById("mobilMenu");
+    // if it has the hidden class remove t otherwise  add it
+    if (menu.classList.contains("hidden")) {
+      menu.classList.remove("hidden");
+    } else {
+      menu.classList.add("hidden");
+    }
+  };
+
   return (
     <header className="justify-between flex items-center py-4 px-4 lg:px-20">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-light m-0">
@@ -37,11 +47,14 @@ const Header = () => {
         ENTRAR
       </button>
       {/* mobile menu button - visible only on moblie */}
-      <button className="md:hidden text-3xl p-2 z-50">
+      <button onClick={toggleMenu} className="md:hidden text-3xl p-2 z-50">
         <i className="bx bx-menu"></i>
       </button>
       {/* mobile menu - visible only on moblie */}
-      <div className="fixed top-20 bottom-0 right-0 left-0 p-5 md:hidden z-40 bg-black bg-opacity-70">
+      <div
+        id="mobilMenu"
+        className=" hidden fixed top-20 bottom-0 right-0 left-0 p-5 md:hidden z-40 bg-black bg-opacity-70 backdrop-blur md"
+      >
         <nav className="flex flex-col gap-6 items-center">
           <a
             className="text-base tracking-wider transition-colors hover:text-gray-300 z-50 "
